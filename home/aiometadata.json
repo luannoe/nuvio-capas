@@ -1,0 +1,557 @@
+{
+ "version": 1,
+ "exportedAt": "2026-11-26T12:00:00.000Z",
+ "catalogs": [
+  {
+   "id": "tmdb.discover.series.trending_animes.tvaovivo",
+   "type": "series",
+   "name": "Trending Animes",
+   "enabled": true,
+   "showInHome": true,
+   "source": "tmdb",
+   "metadata": {
+    "discover": {
+     "version": 2,
+     "source": "tmdb",
+     "mediaType": "tv",
+     "params": {
+      "sort_by": "popularity.desc",
+      "include_adult": false,
+      "with_genres": "16",
+      "without_genres": "10762",
+      "with_keywords": "210024",
+      "vote_count.gte": 10,
+      "air_date.gte": "__tmdb_date__:last_90_days:from",
+      "air_date.lte": "__tmdb_date__:last_90_days:to"
+     },
+     "formState": {
+      "catalogName": "Trending Animes",
+      "discoverSource": "tmdb",
+      "sortBy": "popularity.desc",
+      "catalogType": "series",
+      "includeAdult": false,
+      "releasedOnly": false,
+      "includeGenres": [
+       {
+        "id": 16,
+        "label": "Animação"
+       }
+      ],
+      "excludeGenres": [
+       {
+        "id": 10762,
+        "label": "Kids"
+       }
+      ],
+      "withKeywords": [
+       {
+        "id": 210024,
+        "label": "anime"
+       }
+      ],
+      "voteCountMin": 10,
+      "airDatePreset": "last_90_days"
+     }
+    }
+   }
+  },
+  {
+   "id": "flixpatrol.netflix.br.movie",
+   "type": "movie",
+   "name": "Top 10 Filmes Hoje",
+   "enabled": true,
+   "showInHome": true,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.netflix.br.series",
+   "type": "series",
+   "name": "Top 10 Séries Hoje",
+   "enabled": true,
+   "showInHome": true,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "tmdb.discover.movie.adicionados_recentemente.tvaovivo",
+   "type": "movie",
+   "name": "Adicionados Recentemente",
+   "enabled": true,
+   "showInHome": true,
+   "source": "tmdb",
+   "metadata": {
+    "discover": {
+     "version": 2,
+     "source": "tmdb",
+     "mediaType": "movie",
+     "params": {
+      "sort_by": "release_date.desc",
+      "include_adult": false,
+      "region": "BR",
+      "with_release_type": "4|5|6",
+      "vote_count.gte": 5,
+      "release_date.gte": "__tmdb_date__:last_30_days:from",
+      "release_date.lte": "__tmdb_date__:last_30_days:to"
+     },
+     "formState": {
+      "catalogName": "Adicionados Recentemente",
+      "discoverSource": "tmdb",
+      "sortBy": "release_date.desc",
+      "catalogType": "movie",
+      "includeAdult": false,
+      "releasedOnly": true,
+      "movieDatePreset": "last_30_days",
+      "voteCountMin": 5
+     }
+    }
+   }
+  },
+  {
+   "id": "tmdb.discover.series.series_adicionadas_recentemente.tvaovivo",
+   "type": "series",
+   "name": "Adicionados Recentemente",
+   "enabled": true,
+   "showInHome": true,
+   "source": "tmdb",
+   "metadata": {
+    "discover": {
+     "version": 2,
+     "source": "tmdb",
+     "mediaType": "tv",
+     "params": {
+      "sort_by": "first_air_date.desc",
+      "include_adult": false,
+      "watch_region": "BR",
+      "with_watch_providers": "8|119|337|1899|350|531|307|283",
+      "vote_count.gte": 3,
+      "first_air_date.gte": "__tmdb_date__:last_45_days:from",
+      "first_air_date.lte": "__tmdb_date__:last_45_days:to"
+     },
+     "formState": {
+      "catalogName": "Adicionados Recentemente",
+      "discoverSource": "tmdb",
+      "sortBy": "first_air_date.desc",
+      "catalogType": "series",
+      "includeAdult": false,
+      "releasedOnly": false,
+      "watchRegion": "BR",
+      "providerJoinMode": "or",
+      "watchProviders": [
+       {
+        "id": 8,
+        "label": "8"
+       },
+       {
+        "id": 119,
+        "label": "119"
+       },
+       {
+        "id": 337,
+        "label": "337"
+       },
+       {
+        "id": 1899,
+        "label": "1899"
+       },
+       {
+        "id": 350,
+        "label": "350"
+       },
+       {
+        "id": 531,
+        "label": "531"
+       },
+       {
+        "id": 307,
+        "label": "307"
+       },
+       {
+        "id": 283,
+        "label": "283"
+       }
+      ],
+      "voteCountMin": 3,
+      "seriesDatePreset": "last_45_days"
+     }
+    }
+   }
+  },
+  {
+   "id": "tmdb.discover.series.novos_kdramas.tvaovivo",
+   "type": "series",
+   "name": "Novos K-Dramas",
+   "enabled": true,
+   "showInHome": true,
+   "source": "tmdb",
+   "metadata": {
+    "discover": {
+     "version": 2,
+     "source": "tmdb",
+     "mediaType": "tv",
+     "params": {
+      "sort_by": "popularity.desc",
+      "include_adult": false,
+      "with_original_language": "ko",
+      "with_genres": "18",
+      "vote_count.gte": 3,
+      "first_air_date.gte": "__tmdb_date__:last_120_days:from",
+      "first_air_date.lte": "__tmdb_date__:last_120_days:to"
+     },
+     "formState": {
+      "catalogName": "Novos K-Dramas",
+      "discoverSource": "tmdb",
+      "sortBy": "popularity.desc",
+      "catalogType": "series",
+      "includeAdult": false,
+      "releasedOnly": false,
+      "originalLanguage": "ko",
+      "includeGenres": [
+       {
+        "id": 18,
+        "label": "Drama"
+       }
+      ],
+      "voteCountMin": 3,
+      "seriesDatePreset": "last_120_days"
+     }
+    }
+   }
+  },
+  {
+   "id": "tmdb.discover.series.novos_cdramas.tvaovivo",
+   "type": "series",
+   "name": "Novos C-Dramas",
+   "enabled": true,
+   "showInHome": true,
+   "source": "tmdb",
+   "metadata": {
+    "discover": {
+     "version": 2,
+     "source": "tmdb",
+     "mediaType": "tv",
+     "params": {
+      "sort_by": "popularity.desc",
+      "include_adult": false,
+      "with_original_language": "zh",
+      "with_origin_country": "CN",
+      "with_genres": "18",
+      "vote_count.gte": 1,
+      "first_air_date.gte": "__tmdb_date__:last_120_days:from",
+      "first_air_date.lte": "__tmdb_date__:last_120_days:to"
+     },
+     "formState": {
+      "catalogName": "Novos C-Dramas",
+      "discoverSource": "tmdb",
+      "sortBy": "popularity.desc",
+      "catalogType": "series",
+      "includeAdult": false,
+      "releasedOnly": false,
+      "originalLanguage": "zh",
+      "originCountry": "CN",
+      "includeGenres": [
+       {
+        "id": 18,
+        "label": "Drama"
+       }
+      ],
+      "voteCountMin": 1,
+      "seriesDatePreset": "last_120_days"
+     }
+    }
+   }
+  },
+  {
+   "id": "tmdb.discover.series.em_breve_series.tvaovivo",
+   "type": "series",
+   "name": "Em Breve",
+   "enabled": true,
+   "showInHome": true,
+   "source": "tmdb",
+   "metadata": {
+    "discover": {
+     "version": 2,
+     "source": "tmdb",
+     "mediaType": "tv",
+     "params": {
+      "sort_by": "popularity.desc",
+      "include_adult": false,
+      "first_air_date.gte": "__tmdb_date__:next_120_days:from",
+      "first_air_date.lte": "__tmdb_date__:next_120_days:to"
+     },
+     "formState": {
+      "catalogName": "Em Breve",
+      "discoverSource": "tmdb",
+      "sortBy": "popularity.desc",
+      "catalogType": "series",
+      "includeAdult": false,
+      "releasedOnly": false,
+      "seriesDatePreset": "next_120_days"
+     }
+    }
+   }
+  },
+  {
+   "id": "tmdb.discover.movie.em_breve.tvaovivo",
+   "type": "movie",
+   "name": "Em Breve",
+   "enabled": true,
+   "showInHome": true,
+   "source": "tmdb",
+   "metadata": {
+    "discover": {
+     "version": 2,
+     "source": "tmdb",
+     "mediaType": "movie",
+     "params": {
+      "sort_by": "popularity.desc",
+      "include_adult": false,
+      "region": "BR",
+      "with_release_type": "2|3",
+      "release_date.gte": "__tmdb_date__:next_120_days:from",
+      "release_date.lte": "__tmdb_date__:next_120_days:to",
+      "primary_release_date.gte": "__tmdb_date__:last_60_days:from"
+     },
+     "formState": {
+      "catalogName": "Em Breve",
+      "discoverSource": "tmdb",
+      "sortBy": "popularity.desc",
+      "catalogType": "movie",
+      "includeAdult": false,
+      "releasedOnly": false,
+      "tmdbMovieReleaseTypes": [
+       2,
+       3
+      ],
+      "movieDatePreset": "next_120_days"
+     }
+    }
+   }
+  },
+  {
+   "id": "tmdb.discover.movie.menos_de_duas_horas.tvaovivo",
+   "type": "movie",
+   "name": "Menos de Duas Horas",
+   "enabled": true,
+   "showInHome": false,
+   "source": "tmdb",
+   "metadata": {
+    "discover": {
+     "version": 2,
+     "source": "tmdb",
+     "mediaType": "movie",
+     "params": {
+      "sort_by": "popularity.desc",
+      "include_adult": false,
+      "with_release_type": "4|5|6",
+      "with_runtime.gte": 60,
+      "with_runtime.lte": 120,
+      "vote_average.gte": 7,
+      "vote_count.gte": 300
+     },
+     "formState": {
+      "catalogName": "Menos de Duas Horas",
+      "discoverSource": "tmdb",
+      "sortBy": "popularity.desc",
+      "catalogType": "movie",
+      "includeAdult": false,
+      "releasedOnly": true,
+      "runtimeRange": [
+       60,
+       120
+      ],
+      "voteAverageRange": [
+       7,
+       10
+      ],
+      "voteCountMin": 300
+     }
+    }
+   }
+  },
+  {
+   "id": "flixpatrol.amazon-prime.br.movie",
+   "type": "movie",
+   "name": "Top 10 Filmes · Prime Video",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.amazon-prime.br.series",
+   "type": "series",
+   "name": "Top 10 Séries · Prime Video",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.disney.br.movie",
+   "type": "movie",
+   "name": "Top 10 Filmes · Disney+",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.disney.br.series",
+   "type": "series",
+   "name": "Top 10 Séries · Disney+",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.hbo-max.br.movie",
+   "type": "movie",
+   "name": "Top 10 Filmes · HBO Max",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.hbo-max.br.series",
+   "type": "series",
+   "name": "Top 10 Séries · HBO Max",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.apple-tv.br.movie",
+   "type": "movie",
+   "name": "Top 10 Filmes · Apple TV+",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.apple-tv.br.series",
+   "type": "series",
+   "name": "Top 10 Séries · Apple TV+",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.paramount.br.movie",
+   "type": "movie",
+   "name": "Top 10 Filmes · Paramount+",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.paramount.br.series",
+   "type": "series",
+   "name": "Top 10 Séries · Paramount+",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.globoplay.br.movie",
+   "type": "movie",
+   "name": "Top 10 Filmes · Globoplay",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.globoplay.br.series",
+   "type": "series",
+   "name": "Top 10 Séries · Globoplay",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.claro-video.br.movie",
+   "type": "movie",
+   "name": "Top 10 Filmes · Claro video",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "flixpatrol.claro-video.br.series",
+   "type": "series",
+   "name": "Top 10 Séries · Claro video",
+   "enabled": true,
+   "showInHome": false,
+   "source": "flixpatrol",
+   "enableRatingPosters": true,
+   "metadata": {
+    "countrySlug": "brazil"
+   }
+  },
+  {
+   "id": "mal.upcoming",
+   "name": "Em Breve",
+   "type": "anime",
+   "source": "mal",
+   "sort": "default",
+   "order": "asc",
+   "enabled": true,
+   "showInHome": true
+  }
+ ]
+}
